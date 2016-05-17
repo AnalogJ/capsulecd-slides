@@ -161,18 +161,48 @@
 
 	<section class="slide">
 		<h2>What just happened?</h2>
+
+		<table>
+			<tr>
+				<th scope="col">Step</th>
+				<th>Description</th>
+			</tr>
+			<tr>
+				<th scope="row">source_configure</th>
+				<td>authenticate to github</td>
+			</tr>
+			<tr>
+				<th scope="row">runner_retrieve_payload</th>
+				<td>pull request info is retrieved from source api</td>
+			</tr>
+			<tr>
+				<th scope="row">source_process_pull_request_payload</th>
+				<td>the merged pull request is cloned</td>
+			</tr>
+			<tr>
+				<th scope="row">build_step</th>
+				<td>adding any missing files/default structure, compilation, version bumping</td>
+			</tr>
+			<tr>
+				<th scope="row">test_step</th>
+				<td>download package dependencies, run the package test runner</td>
+			</tr>
+			<tr>
+				<th scope="row">package_step</th>
+				<td>commit any local changes and create a git tag, local only</td>
+			</tr>
+			<tr>
+				<th scope="row">release_step</th>
+				<td>push the release to the package repository</td>
+			</tr>
+			<tr>
+				<th scope="row">source_release</th>
+				<td>push the merged, tested and version updated code up to the source code repository</td>
+			</tr>
+		</table>
 	</section>
 
-	<section class="slide">
-		<h2>Inner navigation</h2>
-		<ol>
-			<li>Lets you reveal list items one by one</li>
-			<li class="next">To keep some key points</li>
-			<li class="next">In secret from audience</li>
-			<li class="next">But it will work only once</li>
-			<li class="next">Nobody wants to see the same joke twice</li>
-		</ol>
-	</section>
+
 	<section class="slide grid">
 		<h2>All nicely aligned to grid</h2>
 	</section>
