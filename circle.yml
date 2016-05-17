@@ -6,5 +6,6 @@ test:
   post:
     - git config --global user.email "jk17@ualberta.ca"
     - git config --global user.name "Jason Kulatunga"
+    - git remote set-url origin https://$GITHUB_TOKEN@github.com/AnalogJ/capsulecd-slides.git
     - npm run prepare
     - npm run publish
