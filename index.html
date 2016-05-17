@@ -173,7 +173,7 @@
 			</tr>
 			<tr>
 				<th scope="row">runner_retrieve_payload</th>
-				<td>pull request info is retrieved from source api</td>
+				<td>get PR info from source api</td>
 			</tr>
 			<tr>
 				<th scope="row">source_process_pull_request_payload</th>
@@ -181,15 +181,15 @@
 			</tr>
 			<tr>
 				<th scope="row">build_step</th>
-				<td>adding any missing files/default structure, compilation, version bumping</td>
+				<td>missing files, compilation, version bumping</td>
 			</tr>
 			<tr>
 				<th scope="row">test_step</th>
-				<td>download package dependencies, run the package test runner</td>
+				<td>package deps, package test runner</td>
 			</tr>
 			<tr>
 				<th scope="row">package_step</th>
-				<td>commit any local changes and create a git tag, local only</td>
+				<td>commit changes locally, create git tag</td>
 			</tr>
 			<tr>
 				<th scope="row">release_step</th>
@@ -197,7 +197,7 @@
 			</tr>
 			<tr>
 				<th scope="row">source_release</th>
-				<td>push the merged, tested and version updated code up to the source code repository</td>
+				<td>push the merged, versioned, tested code to GH</td>
 			</tr>
 		</table>
 	</section>
