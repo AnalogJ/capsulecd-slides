@@ -122,25 +122,13 @@
 	</section>
 
 	<section class="slide">
-		<h2>Serious citations</h2>
-		<figure>
-			<blockquote>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-			</blockquote>
-			<figcaption>Marcus Tullius Cicero</figcaption>
-		</figure>
-	</section>
-
-	<section class="slide">
-		<h2>Code samples</h2>
+		<h2>Docker Example</h2>
 		<pre>
-			<code>&lt;!DOCTYPE html&gt;</code>
-			<code class="mark">&lt;html lang="en"&gt;</code>
-			<code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-			<code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-			<code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-			<code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-			<code><mark>&lt;/head&gt;</mark></code>
+			<code>CAPSULE_SOURCE_GITHUB_ACCESS_TOKEN=123456789ABCDEF \</code>
+			<code>CAPSULE_RUNNER_REPO_FULL_NAME=AnalogJ/gem_analogj_test \</code>
+			<code>CAPSULE_RUNNER_PULL_REQUEST=4 \</code>
+			<code>CAPSULE_RUBYGEMS_API_KEY=ASDF12345F \</code>
+			<code>docker run AnalogJ/capsulecd:ruby capsulecd start --source github --package_type ruby</code>
 		</pre>
 	</section>
 	<section class="slide">
