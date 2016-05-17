@@ -125,48 +125,22 @@
 		<h2>Docker Example</h2>
 		<pre>
 			<code>CAPSULE_SOURCE_GITHUB_ACCESS_TOKEN=123456789ABCDEF \</code>
-			<code>CAPSULE_RUNNER_REPO_FULL_NAME=AnalogJ/gem_analogj_test \</code>
+			<code>CAPSULE_RUNNER_REPO_FULL_NAME=<mark>AnalogJ/gem_analogj_test</mark> \</code>
 			<code>CAPSULE_RUNNER_PULL_REQUEST=4 \</code>
 			<code>CAPSULE_RUBYGEMS_API_KEY=ASDF12345F \</code>
 			<code>docker run AnalogJ/capsulecd:ruby capsulecd start --source github --package_type ruby</code>
 		</pre>
 	</section>
+
 	<section class="slide">
-		<h2>Even tables</h2>
-		<table>
-		<tr>
-			<th scope="col">Locavore</th>
-			<th>Umami</th>
-			<th>Helvetica</th>
-			<th>Vegan</th>
-		</tr>
-		<tr>
-			<th scope="row">Fingerstache</th>
-			<td>Kale</td>
-			<td>Chips</td>
-			<td>Keytar</td>
-		</tr>
-		<tr>
-			<th scope="row">Sriracha</th>
-			<td>Gluten-free</td>
-			<td>Ennui</td>
-			<td>Keffiyeh</td>
-		</tr>
-		<tr>
-			<th scope="row">Thundercats</th>
-			<td>Jean</td>
-			<td>Shorts</td>
-			<td>Biodiesel</td>
-		</tr>
-		<tr>
-			<th scope="row">Terry</th>
-			<td>Richardson</td>
-			<td>Swag</td>
-			<td>Blog</td>
-		</tr>
-		</table>
-		<p>It’s good to have information organized.</p>
+		<h2>capsule.yml Config File</h2>
+		<pre>
+			<code>source_git_parent_path: /srv/myclonefolder</code>
+			<code>source_github_api_endpoint: https://git.mycorpsubnet.example.com/v2</code>
+			<code>source_github_web_endpoint: https://git.mycorpsubnet.example.com/v2</code>
+		</pre>
 	</section>
+
 	<section class="slide" id="picture">
 		<h2>Pictures</h2>
 		<img src="pictures/picture.jpg" alt="" class="cover">
