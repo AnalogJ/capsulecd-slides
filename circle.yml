@@ -1,0 +1,4 @@
+test:
+  post:
+    - npm run prepare
+    - npm run publish
