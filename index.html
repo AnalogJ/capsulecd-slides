@@ -139,21 +139,29 @@
 			<code>source_git_parent_path: /srv/myclonefolder</code>
 			<code>source_github_api_endpoint: https://git.corp.example.com/v2</code>
 			<code>source_github_web_endpoint: https://git.corp.example.com/v2</code>
+			<code>source_configure:</code>
+			<code>	pre: |</code>
+			<code>		# this is my multiline ruby script</code>
+			<code>		# the pre hook script runs before the actual step (source_configure) executes</code>
+			<code>		# we have access to any of the specified instance variables here.</code>
+			<code>		# check the documentation for more information.</code>
+			<code>		puts "pre_source_configure hook" </code>
 		</pre>
 	</section>
 
-	<section class="slide" id="picture">
-		<h2>Pictures</h2>
-		<img src="pictures/picture.jpg" alt="" class="cover">
-		<style>
-			#picture h2 {
-				color:#FFF;
-				}
-		</style>
+	<section class="slide">
+
+		<h2 class="shout">
+			<a href="demo/github-capsulecd.mov">Demo</a>
+		</h2>
+		<img src="demo/github-capsulecd.gif" alt="" class="cover">
+
 	</section>
+
 	<section class="slide">
 		<h2 class="shout shrink">You can even shout this way</h2>
 	</section>
+
 	<section class="slide">
 		<h2>Inner navigation</h2>
 		<ol>
