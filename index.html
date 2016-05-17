@@ -128,7 +128,8 @@
 			<code>CAPSULE_RUNNER_REPO_FULL_NAME=<mark>AnalogJ/gem_analogj_test</mark> \</code>
 			<code>CAPSULE_RUNNER_PULL_REQUEST=4 \</code>
 			<code>CAPSULE_RUBYGEMS_API_KEY=ASDF12345F \</code>
-			<code>docker run AnalogJ/capsulecd:ruby capsulecd start --source github --package_type ruby</code>
+			<code>docker run AnalogJ/capsulecd:ruby \</code>
+			<code>capsulecd start --source github --package_type ruby</code>
 		</pre>
 	</section>
 
@@ -136,8 +137,8 @@
 		<h2>capsule.yml Config File</h2>
 		<pre>
 			<code>source_git_parent_path: /srv/myclonefolder</code>
-			<code>source_github_api_endpoint: https://git.mycorpsubnet.example.com/v2</code>
-			<code>source_github_web_endpoint: https://git.mycorpsubnet.example.com/v2</code>
+			<code>source_github_api_endpoint: https://git.corp.example.com/v2</code>
+			<code>source_github_web_endpoint: https://git.corp.example.com/v2</code>
 		</pre>
 	</section>
 
