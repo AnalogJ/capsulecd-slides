@@ -4,5 +4,7 @@ machine:
 
 test:
   post:
+    - git config --global user.email "jk17@ualberta.ca"
+    - git config --global user.name "Jason Kulatunga"
     - npm run prepare
     - npm run publish
