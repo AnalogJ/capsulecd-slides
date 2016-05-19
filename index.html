@@ -134,21 +134,6 @@
 	</section>
 
 	<section class="slide">
-		<h2>capsule.yml Config File</h2>
-		<pre>
-			<code>source_git_parent_path: /srv/myclonefolder</code>
-			<code>source_github_api_endpoint: https://git.corp.example.com/v2</code>
-			<code>source_github_web_endpoint: https://git.corp.example.com/v2</code>
-			<code>source_configure:</code>
-			<code>	pre: |</code>
-			<code>		# this is my multiline ruby script</code>
-			<code>		# the pre hook script runs before the step</code>
-			<code>		# we have access to any of the instance variables here.</code>
-			<code>		# check the documentation for more information.</code>
-		</pre>
-	</section>
-
-	<section class="slide">
 
 		<h2>Demo</h2>
 
@@ -208,6 +193,21 @@
 				<td>push the merged, versioned, tested code to GH</td>
 			</tr>
 		</table>
+	</section>
+
+	<section class="slide">
+		<h2>capsule.yml Config File</h2>
+		<pre>
+			<code>source_git_parent_path: /srv/myclonefolder</code>
+			<code>source_github_api_endpoint: https://git.corp.example.com/v2</code>
+			<code>source_github_web_endpoint: https://git.corp.example.com/v2</code>
+			<code>source_configure:</code>
+			<code>	pre: |</code>
+			<code>		# this is my multiline ruby script</code>
+			<code>		# the pre hook script runs before the step</code>
+			<code>		# we have access to any of the instance variables here.</code>
+			<code>		# check the documentation for more information.</code>
+		</pre>
 	</section>
 
 	<section class="slide" id="see-more">
